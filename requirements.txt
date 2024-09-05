@@ -1,0 +1,11 @@
+i
+react-router-dom
+prop-types
+antd --save
+-D tailwindcss postcss autoprefixer
+npx tailwindcss init
+primereact
+chart.js
+recharts
+dayjs
+axios

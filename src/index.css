@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --purple-color: #7d54f3;
+  --purple-color-light: #d3c4fc;
+}
+
+/* In your CSS file (e.g., index.css) */
+
+.ant-menu {
+  margin-top: 0 !important;
+}
+.ant-menu-item {
+  background-color: transparent !important; /* Remove background color */
+
+  color: #000000 !important;
+  /* position: relative !important; */
+}
+
+.ant-menu-item:first-child {
+  margin-bottom: 1.5rem !important;
+}
+.ant-menu-item:not(:first-child) {
+  margin-block: 1.5rem !important;
+}
+
+.ant-menu-item-active {
+  color: #7d54f3 !important;
+}
+
+.ant-menu-item:hover {
+  background-color: transparent !important; /* Remove hover background color */
+}
+
+.ant-menu-item-selected {
+  background-color: transparent !important; /* Remove selected background color */
+  color: #7d54f3 !important;
+  /* position: relative; */
+}
+.ant-menu-item .menu-item {
+  overflow: visible !important;
+}
+
+.custom-input input::placeholder {
+  color: #000000; /* Change the placeholder text color */
+  opacity: 1; /* Ensure opacity is 1 to make it fully visible */
+}
+
+.ant-select-selector {
+  /* background: #d3c4fc; */
+  /* background: #7d54f3 !important; */
+  /* background: transparent; */
+  background: none !important;
+  /* opacity: 0.5; */
+  border-radius: 1rem !important;
+}
+
+/* Change background color on option hover */
+.ant-select-item-option-active {
+  background-color: #c6b2f7 !important; /* Set your desired hover background color */
+}
+
+.ant-select-selection-placeholder {
+  color: #7d54f3 !important;
+  font-weight: 700;
+  opacity: 1 !important;
+}
+.custom-button {
+  background: #7d54f3;
+  transition: background 0.3s ease;
+  /* cursor: pointer; */
+}
+.custom-button:hover {
+  background-color: #d3c4fc !important;
+}
+
+/* In your index.css or any global CSS file */
+.custom-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #7d54f3 !important; /* Purple color */
+  border-color: #7d54f3 !important; /* Purple border */
+}
+
+.custom-checkbox .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #7d54f3 !important;
+}
+
+/* Add these styles to your global CSS file */
+.no-scrollbar {
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.ant-col {
+  text-align: start !important;
+}
+.ant-col.ant-form-item-label {
+  padding: 0 !important;
+  font-weight: bold;
+}
+/* .ant-input:hover,
+.ant-input:focus,
+.ant-input-number:hover,
+.ant-input-number:focus {
+  border-color: #7d54f3 !important;
+  box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.2);
+} */
+
+/* .ant-btn-primary.custom-button {
+  background: transparent !important;
+} */
+.ant-btn:hover {
+  background: #d3c4fc !important;
+  opacity: 1;
+}
+
+.text-link {
+  text-decoration: none; /* Optional: Remove underline */
+  transition: color 0.3s ease; /* Optional: Smooth transition for color change */
+}
+.email-link {
+  color: var(--purple-color);
+  text-decoration: none; /* Optional: Remove underline */
+  transition: color 0.3s ease; /* Optional: Smooth transition for color change */
+}
+
+.text-link:hover,
+.email-link:hover {
+  color: var(--purple-color-light); /* Change color on hover */
+}
+
+@media (max-width: 500px) {
+  .wrap-at-500px {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrap-at-400px {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 338px) {
+  .wrap-at-338px {
+    flex-wrap: wrap;
+  }
+}
