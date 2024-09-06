@@ -3,6 +3,7 @@ import axios from "axios";
 
 export const axiosInstance = axios.create({
   baseURL: "https://shopsavvy-backend-e68z.onrender.com/api",
+  // baseURL: "http://localhost:8000/api",
 });
 
 // Add a response interceptor
