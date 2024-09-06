@@ -32,3 +32,7 @@ An E-commerce MVP Project for SAIL TECH
 
 - Emmanuel Nwachukwu [GitHub](https://githib.com/emmanex0121) [E-mail](mailto:emmax0121@gmail.com)
 - Winnifred Oguchi
+- Akodu Barakat
+- Joshua Onanuga
+- Omiwole Michael
+- Temitope Dada

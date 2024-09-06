@@ -20,11 +20,11 @@ const useFetchProducts = () => {
             Authorization: `Bearer ${token}`,
           },
         });
-        console.log("hehehhe");
+        // console.log("hehehhe");
 
         // Extract the base URL from axiosInstance and remove `/api` if necessary
         const backendUrl = axiosInstance.defaults.baseURL.replace("/api", "");
-        console.log(backendUrl); // Debug: Check the backend URL
+        // console.log(backendUrl); // Debug: Check the backend URL
 
         // Update image URLs to include the full path
         const updatedProducts = response.data.data.map((product) => ({
@@ -34,7 +34,7 @@ const useFetchProducts = () => {
 
         // Set updated products with correct image URLs
         setProducts(updatedProducts);
-        console.log(updatedProducts);
+        // console.log(updatedProducts);
       } catch (err) {
         setError(err);
         console.error("Error fetching products:", err);

@@ -11,7 +11,7 @@ const useRegister = () => {
 
   // fnction to call forregustration
   const onAuth = async (request) => {
-    console.log("Form Values:", request); // Check the form values here
+    // console.log("Form Values:", request); // Check the form values here
 
     setloading(true);
 
@@ -22,18 +22,18 @@ const useRegister = () => {
     } else {
       endpoint = endpoints.auth.login;
     }
-    console.log(endpoint);
+    // console.log(endpoint);
 
     try {
       const response = await axiosInstance.post(endpoint, request);
       setloading(false);
-      console.log(response);
+      // console.log(response);
 
       if (response.data?.response === "00") {
         // console.log(response.data?.response);
         onNotify("success", "Successful", response?.data?.responseMessage);
 
-        console.log(response);
+        // console.log(response);
         sessionStorage.setItem("***", response.data?.data?.token);
         sessionStorage.setItem("firstName", response.data?.data?.firstName);
         sessionStorage.setItem("lastName", response.data?.data?.lastName);
@@ -44,7 +44,7 @@ const useRegister = () => {
           return navigate("/dashboard");
         }, 2000);
       } else {
-        console.log(endpoint);
+        // console.log(endpoint);
         onNotify("error", "Error occured", response?.data?.responseMessage);
       }
     } catch (error) {

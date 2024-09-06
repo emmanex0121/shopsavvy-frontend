@@ -21,14 +21,14 @@ const useFetchUsers = () => {
             Authorization: `Bearer ${token}`,
           },
         });
-        console.log("hehehhe", response);
+        // console.log("hehehhe", response);
 
         // Set updated users
         setUsers(response.data.data);
-        console.log(response.data.data);
+        // console.log(response.data.data);
       } catch (error) {
         setError(error);
-        console.log("Error fetching products:", error);
+        // console.log("Error fetching products:", error);
       } finally {
         setLoading(false);
       }
