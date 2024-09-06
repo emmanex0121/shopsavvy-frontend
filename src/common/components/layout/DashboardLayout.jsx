@@ -242,7 +242,7 @@ const DashboardLayout = () => {
             textAlign: "center",
             background: "#ECECEC",
           }}>
-          Ant Design ©{new Date().getFullYear()} Created by Ant UED
+          {/* Ant Design ©{new Date().getFullYear()} Created by Ant UED */}
         </Footer>
       </Layout>
     </Layout>
