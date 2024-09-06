@@ -33,13 +33,13 @@ const useRegister = () => {
         // console.log(response.data?.response);
         onNotify("success", "Successful", response?.data?.responseMessage);
 
-        // if (endpoint === endpoints.auth.login) {
         console.log(response);
         sessionStorage.setItem("***", response.data?.data?.token);
         sessionStorage.setItem("firstName", response.data?.data?.firstName);
         sessionStorage.setItem("lastName", response.data?.data?.lastName);
         sessionStorage.setItem("email", response.data?.data?.email);
-        // }
+
+        // Upon Success, save the token to session and take the use to dashboard
         setTimeout(() => {
           return navigate("/dashboard");
         }, 2000);
