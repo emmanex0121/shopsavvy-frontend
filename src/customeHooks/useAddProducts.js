@@ -26,11 +26,11 @@ const useAddProduct = () => {
           },
         }
       );
-      console.log("muhehehe");
+      // console.log("muhehehe");
       //   Handle success response if needed
       onNotify("success", "Successful", "Product added successfully");
 
-      console.log("Product added successfully:", response.data);
+      // console.log("Product added successfully:", response.data);
       // console.log(response.data);
     } catch (err) {
       // Handle error response

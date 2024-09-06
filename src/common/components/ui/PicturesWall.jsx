@@ -47,7 +47,7 @@ const PicturesWall = ({ onChange }) => {
 
       // On success, update file list with the response URL
       // const { imageUrl } = response.data.data;
-      console.log(response.data.data)
+      // console.log(response.data.data)
       file.response = { data: response.data.data };
       file.url = response.data.data;
       onSuccess(null, file);
