@@ -22,7 +22,7 @@ const useRegister = () => {
     } else {
       endpoint = endpoints.auth.login;
     }
-    console.log(endpoint)
+    console.log(endpoint);
 
     try {
       const response = await axiosInstance.post(endpoint, request);
@@ -33,13 +33,13 @@ const useRegister = () => {
         // console.log(response.data?.response);
         onNotify("success", "Successful", response?.data?.responseMessage);
 
-        if (endpoint === endpoints.auth.login) {
-          console.log(endpoint);
-          sessionStorage.setItem("***", response.data?.data?.token);
-          sessionStorage.setItem("firstName", response.data?.data?.firstName);
-          sessionStorage.setItem("lastName", response.data?.data?.lastName);
-          sessionStorage.setItem("email", response.data?.data?.email);
-        }
+        // if (endpoint === endpoints.auth.login) {
+        console.log(response);
+        sessionStorage.setItem("***", response.data?.data?.token);
+        sessionStorage.setItem("firstName", response.data?.data?.firstName);
+        sessionStorage.setItem("lastName", response.data?.data?.lastName);
+        sessionStorage.setItem("email", response.data?.data?.email);
+        // }
         setTimeout(() => {
           return navigate("/dashboard");
         }, 2000);
@@ -49,7 +49,7 @@ const useRegister = () => {
       }
     } catch (error) {
       setloading(false);
-      console.log(error);
+      console.log(error.response.data);
       onNotify("error", "Error occured", error.response?.data?.responseMessage);
     }
   };
