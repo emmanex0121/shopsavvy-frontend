@@ -31,7 +31,7 @@ const UserForm = () => {
   const [submitLoading, setSubmitLoading] = useState(false);
   const { addUser, loading } = useAddUser();
 
-  console.log(showUsers);
+  // console.log(showUsers);
 
   const onFinish = async (values) => {
     // Structure the data to match the backend

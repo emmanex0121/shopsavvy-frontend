@@ -9,7 +9,7 @@ const useAddUser = () => {
   const { onNotify } = useNotification();
 
   const addUser = async (userData) => {
-    console.log(userData);
+    // console.log(userData);
     setLoading(true);
     setError(null);
 
@@ -24,7 +24,7 @@ const useAddUser = () => {
       );
 
       onNotify("success", "Successful", "User added successfully");
-      console.log("User added successfully:", response.data);
+      // console.log("User added successfully:", response.data);
       //   console.log(response.data);
     } catch (error) {
       setError(error);
